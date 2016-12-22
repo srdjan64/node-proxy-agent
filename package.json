@@ -32,7 +32,6 @@
     "http-proxy-agent": "1",
     "https-proxy-agent": "1",
     "lru-cache": "~2.6.5",
-    "pac-proxy-agent": "1",
     "socks-proxy-agent": "2"
   },
   "devDependencies": {

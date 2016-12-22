@@ -10,7 +10,7 @@ var Agent = require('agent-base');
 var inherits = require('util').inherits;
 var debug = require('debug')('proxy-agent');
 
-var PacProxyAgent = require('pac-proxy-agent');
+// var PacProxyAgent = require('pac-proxy-agent');
 var HttpProxyAgent = require('http-proxy-agent');
 var HttpsProxyAgent = require('https-proxy-agent');
 var SocksProxyAgent = require('socks-proxy-agent');
@@ -49,9 +49,9 @@ exports.proxies.socks4a = SocksProxyAgent;
 exports.proxies.socks5 = SocksProxyAgent;
 exports.proxies.socks5h = SocksProxyAgent;
 
-PacProxyAgent.protocols.forEach(function (protocol) {
-  exports.proxies['pac+' + protocol] = PacProxyAgent;
-});
+// PacProxyAgent.protocols.forEach(function (protocol) {
+//   exports.proxies['pac+' + protocol] = PacProxyAgent;
+// });
 
 function httpOrHttpsProxy (opts, secureEndpoint) {
   if (secureEndpoint) {
